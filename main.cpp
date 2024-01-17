@@ -39,12 +39,11 @@ void longueurMOT(){
 
 }
 
-int suiteReelle(){
-    double nombre;
-    double nouvNombre = 0;
-    nombre = 1;
-    double limite = 0;
-    while(limite<0.00001){
+double suiteReelle(){
+    double nombre = 1.0;
+    double nouvNombre = 0.0;
+    double limite = 1.0;
+    while(limite>0.000001){
         nouvNombre = sqrt(nombre+2);
         limite = nouvNombre - nombre;
         nombre = nouvNombre;
