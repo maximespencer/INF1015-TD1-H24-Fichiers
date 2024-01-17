@@ -3,10 +3,10 @@
 #include <conio.h>
 #include <string.h>
 #include <sstream>
+#include <cmath>
 using namespace std;
 
-
-int main(){
+void longueurMOT(){
     string phrase;
     cout << "Saisissez une phrase : ";
     getline(cin, phrase);
@@ -37,11 +37,31 @@ int main(){
     cout << "Le mot le plus long est : " << motPlusLong << endl;
     cout << "La longueur moyenne est : " << longueurMoyenne << " lettres" << endl;
 
-    double U0 = 1;
-    double nombre;
-    double nouvNombre;
-    while((nouvNombre-nombre)){
-        
-    }
+}
 
+int suiteReelle(){
+    double nombre;
+    double nouvNombre = 0;
+    nombre = 1;
+    double limite = 0;
+    while(limite<0.00001){
+        nouvNombre = sqrt(nombre+2);
+        limite = nouvNombre - nombre;
+        nombre = nouvNombre;
+    }
+    return nouvNombre;
+    
+}
+
+void affichageSR(){
+    double limite = suiteReelle();
+    cout<<"La limite de cette suite recurrente est: "<< limite<<endl;
+
+}
+
+int main(){
+    longueurMOT();
+    affichageSR();
+    
+    return 0;
 }
