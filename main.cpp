@@ -3,16 +3,17 @@
 #include <conio.h>
 #include <string.h>
 #include <sstream>
+using namespace std;
 
 
 int main(){
-    /*std::string phrase;
-    std::cout << "Saisissez une phrase : ";
-    std::getline(std::cin, phrase);
-    std::istringstream stream(phrase);
-    std::string mot;
-    std::string motPlusCourt, motPlusLong;
-    size_t longueurMotPlusCourt = std::string::npos;
+    string phrase;
+    cout << "Saisissez une phrase : ";
+    getline(cin, phrase);
+    istringstream stream(phrase);
+    string mot;
+    string motPlusCourt, motPlusLong;
+    size_t longueurMotPlusCourt = string::npos;
     double longueurMotPlusLong,longueurMoyenne,nbMots = 0.0;
     while(stream>>mot){
         if (mot.length()>longueurMotPlusLong){
@@ -32,9 +33,9 @@ int main(){
     if (nbMots > 0) {
         longueurMoyenne /= nbMots;
     }
-    std::cout << "Le mot le plus court est : " << motPlusCourt << std::endl;
-    std::cout << "Le mot le plus long est : " << motPlusLong << std::endl;
-    std::cout << "La longueur moyenne est : " << longueurMoyenne << " lettres" << std::endl;*/
+    cout << "Le mot le plus court est : " << motPlusCourt << endl;
+    cout << "Le mot le plus long est : " << motPlusLong << endl;
+    cout << "La longueur moyenne est : " << longueurMoyenne << " lettres" << endl;
 
     double U0 = 1;
     double nombre;
